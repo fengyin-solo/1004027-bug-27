@@ -229,27 +229,25 @@ export const SEED_ROWS: Record<string, EntryRow[]> = {
       "pending": true,
       "abnormal": false,
       "检测编号": "PIPE-0001",
-      "检测管段": "管道检测样例1",
-      "检测方式": "管道检测样例1",
-      "检测设备": "管道检测样例1",
-      "检测日期": "2026-09-01",
-      "检测长度": "管道检测样例1",
-      "检测结果": "管道检测样例1",
-      "检测状态": "管道检测样例1"
+      "检测管段": "滨河路W12-W18",
+      "检测方式": "CCTV检测",
+      "检测设备": "爬行机器人R-07",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "待检测", "planDate": "2026-10-08", "inspectDate": "", "method": "CCTV检测", "device": "爬行机器人R-07", "length": "320m", "verdict": "", "inspector": "", "defects": ""}
+      ]
     },
     {
       "id": 2,
       "status": "检测中",
       "pending": true,
-      "abnormal": true,
+      "abnormal": false,
       "检测编号": "PIPE-0002",
-      "检测管段": "管道检测样例2",
-      "检测方式": "管道检测样例2",
-      "检测设备": "管道检测样例2",
-      "检测日期": "2026-09-02",
-      "检测长度": "管道检测样例2",
-      "检测结果": "管道检测样例2",
-      "检测状态": "管道检测样例2"
+      "检测管段": "建设路K03-K09",
+      "检测方式": "声呐检测",
+      "检测设备": "声呐检测仪S-02",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "检测中", "planDate": "2026-10-05", "inspectDate": "", "method": "声呐检测", "device": "声呐检测仪S-02", "length": "210m", "verdict": "", "inspector": "周海峰", "defects": ""}
+      ]
     },
     {
       "id": 3,
@@ -257,13 +255,82 @@ export const SEED_ROWS: Record<string, EntryRow[]> = {
       "pending": false,
       "abnormal": false,
       "检测编号": "PIPE-0003",
-      "检测管段": "管道检测样例3",
-      "检测方式": "管道检测样例3",
-      "检测设备": "管道检测样例3",
-      "检测日期": "2026-09-03",
-      "检测长度": "管道检测样例3",
-      "检测结果": "管道检测样例3",
-      "检测状态": "管道检测样例3"
+      "检测管段": "解放大道J21-J27",
+      "检测方式": "CCTV检测",
+      "检测设备": "爬行机器人R-03",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-09-12", "inspectDate": "2026-09-12", "method": "CCTV检测", "device": "爬行机器人R-03", "length": "280m", "verdict": "合格", "inspector": "李建国", "defects": "未见明显缺陷"}
+      ]
+    },
+    {
+      "id": 4,
+      "status": "需复测",
+      "pending": true,
+      "abnormal": true,
+      "检测编号": "PIPE-0004",
+      "检测管段": "人民东路R05-R11",
+      "检测方式": "QV潜望镜",
+      "检测设备": "潜望镜Q-11",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-09-10", "inspectDate": "2026-09-11", "method": "QV潜望镜", "device": "潜望镜Q-11", "length": "180m", "verdict": "不合格", "inspector": "赵明", "defects": "3级破裂1处、渗漏2处"}
+      ]
+    },
+    {
+      "id": 5,
+      "status": "需复测",
+      "pending": true,
+      "abnormal": true,
+      "检测编号": "PIPE-0005",
+      "检测管段": "南山路N08-N14",
+      "检测方式": "CCTV检测",
+      "检测设备": "爬行机器人R-05",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-09-15", "inspectDate": "2026-09-16", "method": "CCTV检测", "device": "爬行机器人R-05", "length": "260m", "verdict": "不合格", "inspector": "钱伟", "defects": "4级错口1处"},
+        {"roundNo": 2, "kind": "retest", "status": "待检测", "planDate": "2026-10-09", "inspectDate": "", "method": "CCTV检测", "device": "爬行机器人R-05", "length": "260m", "verdict": "", "inspector": "", "defects": ""}
+      ]
+    },
+    {
+      "id": 6,
+      "status": "检测中",
+      "pending": true,
+      "abnormal": false,
+      "检测编号": "PIPE-0006",
+      "检测管段": "河滨西路H02-H07",
+      "检测方式": "CCTV检测",
+      "检测设备": "爬行机器人R-09",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-09-02", "inspectDate": "2026-09-03", "method": "CCTV检测", "device": "爬行机器人R-01", "length": "150m", "verdict": "不合格", "inspector": "孙鹏", "defects": "3级变形1处"},
+        {"roundNo": 2, "kind": "retest", "status": "检测中", "planDate": "2026-10-05", "inspectDate": "", "method": "CCTV检测", "device": "爬行机器人R-09", "length": "150m", "verdict": "", "inspector": "周海峰", "defects": ""}
+      ]
+    },
+    {
+      "id": 7,
+      "status": "已完成",
+      "pending": false,
+      "abnormal": false,
+      "检测编号": "PIPE-0007",
+      "检测管段": "环城北路B14-B20",
+      "检测方式": "CCTV检测",
+      "检测设备": "爬行机器人R-02",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-08-20", "inspectDate": "2026-08-21", "method": "CCTV检测", "device": "爬行机器人R-02", "length": "300m", "verdict": "不合格", "inspector": "赵明", "defects": "3级沉积1处"},
+        {"roundNo": 2, "kind": "retest", "status": "已完成", "planDate": "2026-09-05", "inspectDate": "2026-09-06", "method": "CCTV检测", "device": "爬行机器人R-02", "length": "300m", "verdict": "合格", "inspector": "李建国", "defects": "清淤后复测合格"}
+      ]
+    },
+    {
+      "id": 8,
+      "status": "已完成",
+      "pending": false,
+      "abnormal": false,
+      "检测编号": "PIPE-0008",
+      "检测管段": "工业园西区G31-G36",
+      "检测方式": "声呐检测",
+      "检测设备": "声呐检测仪S-01",
+      "rounds": [
+        {"roundNo": 1, "kind": "original", "status": "已完成", "planDate": "2026-07-28", "inspectDate": "2026-07-29", "method": "声呐检测", "device": "声呐检测仪S-01", "length": "190m", "verdict": "不合格", "inspector": "钱伟", "defects": "渗漏3处"},
+        {"roundNo": 2, "kind": "retest", "status": "已完成", "planDate": "2026-08-18", "inspectDate": "2026-08-19", "method": "声呐检测", "device": "声呐检测仪S-01", "length": "190m", "verdict": "不合格", "inspector": "孙鹏", "defects": "仍有2处渗漏"},
+        {"roundNo": 3, "kind": "retest", "status": "已完成", "planDate": "2026-09-25", "inspectDate": "2026-09-26", "method": "CCTV检测", "device": "爬行机器人R-03", "length": "190m", "verdict": "合格", "inspector": "李建国", "defects": "注浆修复后复测合格"}
+      ]
     }
   ],
   "manhole": [
